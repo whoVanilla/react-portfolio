@@ -1,4 +1,4 @@
-import { assets } from "@/assets/assets";
+import { assets, infoList } from "@/assets/assets";
 import Image from "next/image";
 import React from "react";
 
@@ -17,13 +17,19 @@ const About = () => {
         </div>
         <div className="flex-1">
           <p className="mb-10 max-w-2xl font-Ovo">
-            Summer Time Rendering tells the story of Shinpei Ajiro, who
-            returns to his peaceful island hometown for a funeral. However, he
-            soon discovers sinister mysteries involving deadly doppelgängers,
-            time loops, and a relentless fight to protect his loved ones.
+            Summer Time Rendering tells the story of Shinpei Ajiro, who returns
+            to his peaceful island hometown for a funeral. However, he soon
+            discovers sinister mysteries involving deadly doppelgängers, time
+            loops, and a relentless fight to protect his loved ones.
           </p>
-          <ul>
-            
+          <ul className="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-2xl">
+            {infoList.map(({ icon, iconDark, title, description }, index) => (
+              <li key={index}>
+                <Image src={icon} alt={title} />
+                <h3>{title}</h3>
+                <p>{description}</p>
+              </li>
+            ))}
           </ul>
         </div>
       </div>
