@@ -12,7 +12,7 @@ const Services = () => {
         Shinpei Ajiro possesses the unique ability to relive time loops,
         allowing him to uncover secrets, strategize, and protect his loved ones.
       </p>
-      <div className="grid grid-cols-4 gap-6 my-10">
+      <div className="grid grid-cols-auto gap-6 my-10">
         {serviceData.map(({ icon, title, description, link }, index) => (
           <div
             key={index}
