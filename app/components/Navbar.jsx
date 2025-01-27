@@ -89,7 +89,7 @@ const Navbar = () => {
           </button>
         </div>
 
-        {/* -------------- mobile menu --------------- */}
+        {/* --------------- mobile menu ---------------- */}
 
         <ul
           ref={sideMenuRef}
