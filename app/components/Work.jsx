@@ -1,3 +1,4 @@
+import { workData } from "@/assets/assets";
 import React from "react";
 
 const Work = () => {
@@ -10,6 +11,13 @@ const Work = () => {
         Shinpei Ajiro possesses the unique ability to relive time loops,
         allowing him to uncover secrets, strategize, and protect his loved ones.
       </p>
+      <div>
+        {workData.map((project, index) => (
+          <div key={index} style={{backgroundImage: `url(${project.bgImage})`}}>
+            
+          </div>
+        ))}
+      </div>
     </div>
   );
 };
