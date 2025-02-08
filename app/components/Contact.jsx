@@ -11,7 +11,7 @@ const Contact = () => {
 
       <p className="text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo">
         Shinpei Ajiro possesses the unique ability to relive time loops,
-        allowing him to uncover secrets, strategize,, and protect his loved ones.
+        allowing him to uncover secrets, strategize, and protect his loved ones.
       </p>
 
       <form className="max-w-2xl mx-auto">
